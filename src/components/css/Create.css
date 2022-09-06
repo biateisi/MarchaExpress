@@ -1,0 +1,64 @@
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #4d00ff;
+    inherits: false;
+  }
+  
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #00dbde;
+    inherits: false;
+  }
+
+.containerCadastrar{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 18px;
+    border:0.5px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 400px;
+    padding: 30px;
+}
+
+.cadastrarButton {
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 32px;
+    background-color: #00000054;
+    background: linear-gradient(to right, var(--myColor1), var(--myColor2));
+    transition: --myColor1 0.4s, --myColor2 0.9s;
+    margin-top: 20px;
+}
+
+.cadastrarButton:hover{
+    --myColor1: #00dbde;
+    --myColor2: #4d00ff;
+}
+
+.campo{
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.containerCadastrar input, .containerCadastrar select{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 32px;
+    background-color: #00000054;
+    color: white;
+    padding: 0 15px;
+}
