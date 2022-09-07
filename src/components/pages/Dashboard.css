@@ -1,0 +1,196 @@
+.dashboardSection{
+    background-image: url(../assets/DashboardBackground.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+    .dashboardDiv{
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+    }
+        
+        .dashboardText{
+            position: relative;
+            margin: 0 auto;
+            align-items: center;
+            width: 75vw;
+            left: +15px;
+            height: fit-content;
+            background-color: rgba(255, 0, 242, 0);
+            margin-bottom: 32px;
+        }
+
+            .dashboardText h1{
+                font-size: 40px;
+                color: white;
+            }
+
+            .dashboardText p{
+                color: white;
+            }
+
+        .dashboardCards{
+            position: relative;
+            left: -15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            width: calc(75vw);
+            height: auto;
+            background-color: rgba(14, 199, 255, 0);
+        }
+
+        .dashboardCards h3{
+            margin: 20px 0px;
+            color: white;
+        }
+
+        .dashboardCards p{
+            color: white;
+        }
+
+            .dashboardCardsIcon{
+                width: 75px;
+                height: 75px;
+            }
+
+                .send, .mailbox, .check{
+                    width: 100%;
+                }
+
+            .firstCard{
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border:0.5px solid rgba(255, 255, 255, 0.18);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 1rem 1.5rem;
+                border-radius: 30px;
+                height: 270px;
+                margin-left: 30px;
+            }
+
+            .secondCard{
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border:0.5px solid rgba(255, 255, 255, 0.18);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 1rem 1.5rem;
+                border-radius: 30px;
+                height: 270px;
+
+                margin-left: 30px;
+            }
+
+            .thirdCard{
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+         
+                border:0.5px solid rgba(255, 255, 255, 0.18);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 1rem 1.5rem;
+                border-radius: 30px;
+                height: 270px;
+
+                margin-left: 30px;
+            }
+
+.backToHome{
+    margin-top: 20px;
+}
+
+.backToHome p{
+    color: white;
+    font-size: 13px;
+}
+
+
+@media (max-width: 1500px) {
+    .dashboardText{
+        left: +15px;
+    }
+
+    .dashboardCards {
+        grid-template-columns: 1fr 1fr;
+        left: -15px;
+    }
+
+    .firstCard{
+        margin-left: 30px;
+    }
+    .thirdCard {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1130px){
+    .dashboardText{
+        left: +0px;
+        left: -0px;
+    }
+
+    .dashboardCards {
+        grid-template-columns: 1fr;
+        left: +0px;
+        left: -0px;
+    }
+
+    .firstCard {
+        margin-left: 0;
+    }
+
+    .thirdCard{
+        margin-left: 0;
+    }
+    .secondCard {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    .dashboardSection{
+        height: auto;
+    }
+
+    .dashboardDiv{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        height: auto;
+    }
+}
+
+@media (max-width: 520px){
+    .dashboardCards{
+        width: 85vw;
+    }
+    .dashboardText{
+        width: 85vw;
+    }
+}
+
+@media (max-width: 390px){
+    .firstCard, .secondCard, .thirdCard{
+        height: 320px;
+    }
+}
