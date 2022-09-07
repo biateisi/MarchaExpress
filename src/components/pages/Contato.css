@@ -1,0 +1,185 @@
+.sectionContato{
+    background-image: url(../assets/ContatoBackground.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.bady{
+    min-height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:0.5px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    width: 70%;
+
+    border-radius: 18px;
+    padding: 20px 60px 40px 40px;
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%; 
+    transform: translateY(-50%);
+    background: rgb(255, 255, 255);
+}
+
+.content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 7px;
+}
+
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.input-box input,
+.input-box textarea{
+    color: white;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: #ffffff21;
+    border-radius: 18px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box{
+    min-height: 110px;
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #4d00ff;
+    inherits: false;
+  }
+  
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #00dbde;
+    inherits: false;
+  }
+
+.right-side .button{
+    margin-top: 12px;
+    display: inline-block;
+}
+
+.right-side .button input[type='button']{
+    display: flex;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 18px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    transition: all 1s ease-out;
+    color: #0c1d2a;
+}
+
+.right-side .button input[type='button']:hover{
+    background-color: rgb(133, 133, 133);
+}
+
+@media (max-width: 950px){
+    .container{
+        width: 90%;
+        padding: 20px 35px 40px 40px;
+    }
+}
+
+@media (max-width: 820px){
+    .container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container .content .left-side::before{
+        display: none;
+    }
+    .container .content .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 820px){
+    .container{
+        margin-top:80px ;
+    }
+}
