@@ -20,9 +20,6 @@ export default function Home() {
     }, []);
     
     return (
-        /*<>
-            <h1 className='home'>Home</h1>
-        </>*/
         <div className='mother'>
             {
                 loading ? 
@@ -89,19 +86,17 @@ export default function Home() {
 
                     <div className='secondSectionTextBox'>
                         <p>
-                            Lorem ipsum dolor sit amet. Est alias magni non reiciendis neque et dolor sunt. Ut numquam similique in galisum illum nam architecto optio id labore velit optio possimus eos quas maiores. Sed cupiditate voluptatum quo omnis ipsum hic itaque amet eum iusto accusantium 33 cupiditate natus eum dolorem atque et quod voluptatem.
+                            Express-Express com sua sólida experiência em entregas pelo Brasil implementou a opção de entregas sustentáveis, a Ecodelivery: a Marcha Express. 
                             <br /><br />
-                            Aut dolor doloremque aut similique voluptatem et illum fugit ut asperiores repellendus et dignissimos impedit et corrupti labore a culpa voluptates. Id debitis illum qui laborum ipsa vel dicta earum qui error omnis a nihil dolores qui vitae Quis et voluptatibus dolor. Aut tempore enim et iusto optio ut cupiditate tempore. Ex impedit iusto qui vitae nihil in tempore omnis.
-
-                            Et maiores repellendus ut asperiores fugit et iusto laborum in Quis unde ut voluptatem quod et reiciendis accusamus vel eligendi autem. Ut illum voluptas eum quisquam soluta qui vitae adipisci At odio quod ut optio vero. Ex maxime aliquam ab omnis soluta ut cumque exercitationem ea inventore delectus et modi officiis vel dicta tempora. Sit esse sint eum fugiat ratione aut fugit cupiditate placeat quibusdam sed molestias maiores a sunt nemo?
-
-                            Ea veniam veniam non dolorem doloribus est autem similique est velit suscipit sed illum perspiciatis. 33 deserunt exercitationem At optio assumenda sit quae facere et enim magni.
+                            Nos últimos anos, a pauta da proteção ao meio ambiente vem ganhando força no nosso dia a dia. No mercado das entregas, não é diferente.
+                            Alguns termos como logística verde ou ecodelivery vêm ganhando cada vez mais espaço no mercado.
+                            Assim, empresas e soluções focadas em entregas sustentáveis estão aparecendo para repensar o uso de veículos que utilizam combustíveis poluentes.
                             <br /><br />
-                            Qui ullam quidem aut galisum porro ut magni nihil in Quis enim 33 dolor rerum. Ea possimus facilis sit impedit atque nam voluptates saepe qui nemo saepe in internos perferendis nam quia labore sit accusantium itaque. Ut inventore saepe sed numquam ipsum et recusandae commodi.
+                            O ecodelivery otimiza o tempo (tornando o trabalho mais eficiente!) uma vez que gasta-se menos tempo no trânsito. Algumas cidades, por exemplo, tem faixas exclusivas para bicicletas, facilitando ainda mais o trajeto. 
                             <br /><br />
-                            Quo earum deserunt ut quia consequatur et aperiam quia. In sunt incidunt et tempore animi sed molestias molestiae ut nisi accusamus ut culpa molestias vel delectus deserunt qui error dolorem.
-
-                            Ut accusantium amet ex consequatur officiis quia quasi ut officiis error. Aut assumenda velit non tempore rerum in aliquid illo hic eaque aspernatur est laudantium minima. Aut dolores soluta non temporibus dignissimos aut modi esse est galisum porro rerum sunt 33 deleniti laborum. Vel dolores galisum est deserunt dolorem hic illum blanditiis est consequatur numquam aut repellat esse.
+                            Nossa missão é realizar um serviço que agrida a natureza o mínimo possível, fazendo entregas com' bicicletas, e-bikes,  e outros veículos movidos à energia elétrica.
+                            <br /><br />
+                            Com opções de transportes sustentáveis, reduzimos os impactos ambientais, bem como nos custos de operação, com isso o valor do produto final fica mais barato, beneficiando também o consumidor final!
                         </p>
                     </div>
 
@@ -165,7 +160,7 @@ export default function Home() {
                             <img src={cadastro} className='cadastro' alt='Cadastro' />
                         </div>
                         <h3>Cadastre-se</h3>
-                        <span>Lorem ipsum dictumst ullamcorper blandit scelerisque class nullam etiam.</span>
+                        <span>Realize seu cadastro no site.</span>
                         <button className='cardsButton firstButton'>Vamos lá!</button>
                     </div>
 
@@ -174,7 +169,8 @@ export default function Home() {
                             <img src={box} className='box' alt='Caixa' />
                         </div>
                         <h3>Conecte-se</h3>
-                        <span>Lorem ipsum dictumst ullamcorper blandit scelerisque class nullam etiam.</span>
+                        <span>Faça o login em sua conta e preencha as informações 
+                            da entrega.</span>
                         <button className='cardsButton secondButton'>Vamos lá!</button>
                     </div>
 
@@ -183,7 +179,7 @@ export default function Home() {
                             <img src={handshake} className='handshake' alt='Mãos' />
                         </div>
                         <h3>Deixe com a gente</h3>
-                        <span>Lorem ipsum dictumst ullamcorper blandit scelerisque class nullam etiam.</span>
+                        <span>O resto é com a gente ;)</span>
                         <button className='cardsButton thirdButton'>Vamos lá!</button>
                     </div>
 

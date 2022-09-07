@@ -22,9 +22,25 @@ export default function Update() {
             CPF,
             E_mail,
             Estado
-        }).then((response) => {
-            console.log(response);
-        })
+        }).catch(function (error) {
+          if (error.response) {          
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+  
+            alert(error.response.data);
+  
+          } else if (error.request) {
+            console.log(error.request);
+  
+            alert("Erro ao conectar com o servidor");
+  
+          } else {
+            console.log('Error', error.message);
+  
+            alert("Erro ao conectar com o servidor");
+          }
+        });
     }
 
     useEffect(() => {
