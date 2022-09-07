@@ -14,20 +14,14 @@ const Footer = ({path} : any) => {
                 <div className='footer'>
                     <div className='footer-heading footer1'>
                         <h2>Sobre nós</h2>
-                        <a href='#'>Clientes</a>
-                        <a href='#'>Parceiros</a>
-                        <a href='#'>Lorem ipsum</a>
-                        <a href='#'>Lorem ipsum</a>
-                        <a href='#'>Lorem ipsum</a>
+                        <a href='#'>Quem somos</a>
+                        <a href='#'>Como funciona</a>
                     </div>
 
                     <div className='footer-heading footer2'>
                         <h2>Contato</h2>
-                        <a href='#'>Vagas</a>
-                        <a href='#'>Suporte</a>
-                        <a href='#'>Contato</a>
-                        <a href='#'>Lorem ipsum</a>
-                        <a href='#'>Lorem ipsum</a>
+                        <a href='#'>Perguntas frequentes</a>
+                        <a href='#'>Entre em contato!</a>
                     </div>
 
                     <div className='footer-heading footer3'>
