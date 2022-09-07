@@ -1,0 +1,79 @@
+.tabela{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 18px;
+    border:0.5px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 800px;
+    padding: 30px;
+}
+
+.headerRead{
+    margin-bottom: 30px;
+}
+
+table{
+    color: white;
+}
+
+.titulos{
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+td.thNome{
+    display: flex;
+    padding-left: 32px;
+}
+
+td.thCPF{
+    display: flex;
+    padding-left: 24px;
+}
+
+td.thEmail{
+    display: flex;
+    padding-left: 52px;
+}
+
+td.thAcoes{
+    display: flex;
+    padding-right: 25px;
+}
+
+.titulos td{
+    margin-bottom: 7px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+tbody{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2.8fr 4.5fr 2.5fr 1fr;
+}
+
+td{
+    display: flex;
+    align-items: center;
+}
+
+.btnUpdate{
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.btnDelete{
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+}

@@ -1,51 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import { Link } from 'react-router-dom';
-import "./css/Update.css";
+import "./css/Create.css";
 
-export default function Update() {
-    const [Nome, setNome] = useState('');
-    const [CPF, setCpf] = useState('');
-    const [E_mail, setEmail] = useState('');
-    const [Estado, setEstado] = useState('');
-    const [id, setId] = useState('');
-  
-    console.log(Nome);
-    console.log(CPF);
-    console.log(E_mail);
-    console.log(Estado);
+export default function Create() {
+  const [Nome, setNome] = useState("");
+  const [CPF, setCpf] = useState("");
+  const [E_mail, setEmail] = useState("");
+  const [Estado, setEstado] = useState("");
 
-    const sendDataToApi = () => {
-        axios.put(`http://localhost:4000/cliente/${id}`, {
-            id,
-            Nome,
-            CPF,
-            E_mail,
-            Estado
-        }).then((response) => {
-            console.log(response);
-        })
-    }
+  console.log(Nome);
+  console.log(CPF);
+  console.log(E_mail);
+  console.log(Estado);
 
-    useEffect(() => {
-        setId(localStorage.getItem("id") || "");
-        setNome(localStorage.getItem("Nome") || "");
-        setCpf(localStorage.getItem("CPF") || "");
-        setEmail(localStorage.getItem("E_mail") || "");
-        setEstado(localStorage.getItem("Estado") || "");
-    }, []); 
+  const sendDataToApi = () => {
+    axios
+      .post("http://localhost:4000/cliente", {
+        Nome,
+        CPF,
+        E_mail,
+        Estado,
+      })
+      .then((response) => {
+        console.log(response);
+      });
+  };
 
-    return (
-      <section className="sectionatualizar">
+  return (
+    <section>
       <div className='containerCadastrar'>
-        <header className="headerCreate">Atualizar Cliente</header>
+        <header className="headerCreate">Cadastrar Cliente</header>
     
         <form>
 
           <div className="campo nome">
             {/* <label>Nome</label> */}
             <input
-            value={Nome}
               onChange={(e) => {
                 setNome(e.target.value);
               }}
@@ -56,7 +46,6 @@ export default function Update() {
           <div className="campo cpf">
             {/* <label>CPF</label> */}
             <input
-            value={CPF}
               onChange={(e) => {
                 setCpf(e.target.value);
               }}
@@ -67,7 +56,6 @@ export default function Update() {
           <div className="campo email">
             {/* <label>Email</label> */}
             <input
-            value={E_mail}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
@@ -81,7 +69,6 @@ export default function Update() {
                       (e) => { setEstado(e.target.value) }
                     } placeholder='Insira o e-estado do cliente' /> */}
             <select
-              value={Estado}
               onChange={(e) => {
                 setEstado(e.target.value);
               }}
@@ -118,11 +105,9 @@ export default function Update() {
           </div>
 
           <div>
-            <Link to="/dashboard/clientes">
             <button className='cadastrarButton' type="submit" onClick={sendDataToApi}>
-              Atualizar
+              Cadastrar
             </button>
-            </Link>
           </div>
 
         </form>
@@ -130,5 +115,5 @@ export default function Update() {
       </div>
 
     </section>
-    );
-  }
+  );
+}
