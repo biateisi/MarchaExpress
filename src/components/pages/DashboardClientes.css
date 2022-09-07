@@ -1,0 +1,27 @@
+.clientesSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../assets/Background.svg);
+    background-color: #001122;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.createDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ac14a500;
+    height: 100%;
+}
+
+.readDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff00;
+    height: 100%;
+}
