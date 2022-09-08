@@ -9,6 +9,7 @@ import Home from './components/pages/Home';
 import Dashboard from './components/pages/Dashboard';
 import DashboardClientes from './components/pages/DashboardClientes';
 import Update from './components/Update';
+import Busca from './components/pages/Busca';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard/>} />
           <Route path='/dashboard/clientes' element={<DashboardClientes/>} />
           <Route path='/dashboard/clientes/atualizar' element={<Update/>} />
+          <Route path='/dashboard/clientes/busca' element={<Busca/>} />
         </Routes>
         <Footer />
       </Router>
