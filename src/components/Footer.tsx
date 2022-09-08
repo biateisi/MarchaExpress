@@ -6,7 +6,7 @@ const Footer = ({path} : any) => {
 
     const { pathname } = useLocation();
     console.log(pathname);
-    if (pathname === "/dashboard" || pathname === "/dashboard/clientes" || pathname === "/dashboard/" || pathname === "/dashboard/clientes/" || pathname === "/dashboard/clientes/atualizar" ) return null;
+    if (pathname === "/dashboard" || pathname === "/dashboard/clientes" || pathname === "/dashboard/" || pathname === "/dashboard/clientes/" || pathname === "/dashboard/clientes/atualizar" || pathname === "/dashboard/clientes/busca") return null;
 
     return(
         <section className='footerSection'>
