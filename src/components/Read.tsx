@@ -38,7 +38,7 @@ export default function Read() {
 
   return (
     <div className="tabela">
-      <header className="headerRead">Gerenciar Clientes</header>
+      <header className="headerRead">Gerenciar Clientes    <Link to="/dashboard/clientes/busca"><i className="fa-solid fa-magnifying-glass"></i></Link></header>
 
       <table className="titulos">
         <tbody>
