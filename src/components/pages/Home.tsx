@@ -7,6 +7,7 @@ import box from '../assets/Box.svg'
 import handshake from '../assets/Handshake.svg'
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
 
@@ -48,7 +49,9 @@ export default function Home() {
                             </div>
 
                             <div className='firstButtonHome'>
-                                <button className='homeButton'>Vamos lá!</button>
+                                <Link to='/cadastrar'>
+                                    <button className='homeButton'>Vamos lá!</button>
+                                </Link>
                             </div>
 
 
